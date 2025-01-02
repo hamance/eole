@@ -19,13 +19,13 @@ setup(
     python_requires=">=3.10",
     install_requires=[
         "configargparse",
-        "ctranslate2>=4,<5",
+        "ctranslate2",
         "fastapi",
         "fasttext-wheel",
         "huggingface_hub",
         "numpy<2.0",
         "pandas",
-        "protobuf==3.20.1",
+        "protobuf",
         "pyahocorasick",
         "pyonmttok>=1.37,<2",
         "pyyaml",
@@ -33,18 +33,18 @@ setup(
         "rich",
         "sacrebleu",
         "safetensors",
-        "sentencepiece>=0.1.94,<0.1.98",
+        "sentencepiece",
         "six",
         "spacy",
         "subword-nmt>=0.3.7",
         "tensorboard>=2.3",
-        "torch>=2.5,<2.6",
+        "torch",
         "uvicorn",
         "waitress",
     ],
-    entry_points={
-        "console_scripts": [
-            "eole=eole.bin.main:main",
-        ],
-    },
+    # entry_points={
+    #     "console_scripts": [
+    #         "eole=eole.bin.main:main",
+    #     ],
+    # },
 )
